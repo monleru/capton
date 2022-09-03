@@ -1,0 +1,125 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(22, 22, 22, 1);
+    min-height: 116px;
+}
+.header_1{
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+.header_1 > ul > li {
+    float: left;
+    text-decoration: none;
+    margin: 0 10px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+.header_2{
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    min-height: 36px;
+    justify-content: space-around;
+    align-items: center;
+}
+.header_2 >p {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(139, 139, 139, 1);
+    display: flex;
+    margin: 0;
+}
+.header_2 >p > span{
+    color: rgba(0, 136, 204, 1);
+}
+.Footer{
+    background: rgba(22, 22, 22, 1);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.Footer > div{
+    min-width: 200px;
+}
+.Footer > div > p {
+    margin: 0;
+}
+.Footer > div > H3 {
+    margin: 10px 0;
+}
+.All_right_reserved{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(139, 139, 139, 1);
+}
+.subscribe_button{
+    width: 100%;
+    background: rgba(1, 50, 75, 1);
+    border-radius: 8px;
+    height: 33px;
+    border: none;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 136, 204, 1);
+}
+.logo_header{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.dark_button{
+    border: none;
+    background: none;
+}
+select{
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+.header_options{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    margin-right: 30px;
+}
+.header_options > input {
+    border: none;
+    background: #262639;
+    color: #8B8B8B;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.currency_icon{
+    background: #038500;
+    color: black;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.active{
+    color: #0088CC;
+}
