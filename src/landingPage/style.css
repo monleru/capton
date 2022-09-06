@@ -1,0 +1,160 @@
+.landeing_h1_blue{
+    background-image: linear-gradient(to bottom, #0088CC, #50BEF4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.our_partners{
+    background: #161616;
+    width: 90%;
+    border-radius: 70px;
+    height: fit-content;
+    padding: 5%;
+    text-align: center;
+    margin: 50px 0;
+}
+.our_partners_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 30px;
+    flex-wrap: wrap;
+}
+.latest_post{
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.5vw;
+    margin-bottom: 50px;
+}
+.meetup_card_div{
+    max-width: 261px;
+    text-align: center;
+}
+.meetup_card_img{
+    max-width: 261px;
+    max-height: 149px;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 25px;
+    width: 261px;
+    height: 149px;
+}
+.ladning_header_div{
+    background: url('img/background_header_.png');
+    margin-left: -50px;
+    width: calc(100% + 100px);
+    height: 60vw;
+    position: relative;
+    margin-top: -150px;
+    background-size: 100% 100%;
+    min-height: 400px;
+    margin-top: 0;
+}
+.landing_head{
+    width: 32vw;
+    position: absolute;
+    left: 10vw;
+    top: 5vw;
+}
+.our_apps_div{
+    width: 90%;
+    padding: 5%;
+    padding-bottom: 0;
+    background: #161616;
+    border-radius: 70px;
+    margin-bottom: 50px;
+}
+.our_apps_div > h3{
+    text-align: center;
+}
+.Apps_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 50px;
+}
+.div_1{
+    background: url('img/background_info.png');
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 679px;
+    height: 273px;
+    float: left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -10vw;
+}
+.div_2{
+    background: url('img/background_info.png');
+    transform: scale(-1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 679px;
+    height: 273px;
+    float: right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div_3{
+    background: url('img/background_info.png');
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 679px;
+    height: 273px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div_1 > div {
+    max-width: 250px;
+}
+.div_1 > img {
+    position: absolute;
+    left: -200px;
+    top: -50px;
+    width: 350px;
+}
+.div_2 > img {
+    position: absolute;
+    left: -200px;
+    top: -50px;
+    width: 350px;
+}
+.div_3 > img {
+    position: absolute;
+    left: -200px;
+    top: -50px;
+    width: 350px;
+}
+.div_2 > div {
+    max-width: 250px;
+    transform: scale(-1,1);
+}
+.div_3 > div {
+    max-width: 250px;
+}
+.div_link_button{
+    color: #0088CC;
+    background: #01324B;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.langing_card_news_button{
+    color: #0088CC;
+    border: 1px #01324B solid;
+    padding: 2px 10px;
+    border-radius: 8px;
+}

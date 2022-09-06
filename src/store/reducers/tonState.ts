@@ -8,7 +8,8 @@ export interface dataState {
     rewards: string | number,
     rank: string | number,
     price: string | number,
-    priceChange: string | number
+    priceChange: string | number,
+    volume_change_24h: number
 }
 interface dataAction {
     type: string,
@@ -23,7 +24,8 @@ const initialState: dataState = {
     rewards: 0,
     rank: 0,
     price: 0,
-    priceChange: 0
+    priceChange: 0,
+    volume_change_24h: 0
 }
 
 export const tonState = (state = initialState, action: dataAction): dataState => {
@@ -38,7 +40,8 @@ export const tonState = (state = initialState, action: dataAction): dataState =>
                 rewards: action.payload.rewards,
                 rank: action.payload.rank,
                 price: action.payload.price,
-                priceChange: action.payload.priceChange
+                priceChange: action.payload.priceChange,
+                volume_change_24h: action.payload.volume_change_24h
             }
         default: return state
     }

@@ -6,6 +6,7 @@ import './App.css';
 import EventsMain from "./Events/eventsMain";
 import EventPage from "./Events/eventPage/eventPage";
 import CryptocurrenciesMain from "./cryptocurrenciesPage/cryptocurrenciesMain";
+import Index from "./landingPage";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Header />
         <Routes >
             <Route path="/" element={<Layout/>}>
-                <Route index element={<CryptocurrenciesMain />}></Route>
+                <Route index element={<Index />}></Route>
+                <Route path="Cryptocurrencies" element={<CryptocurrenciesMain />}></Route>
+                <Route path="Gram_talks" element={<div>Gram Talks</div>}></Route>
                 <Route path="events" element={<EventsMain />}></Route>
                 <Route path="events/:name/:id" element={<EventPage />}></Route>
             </Route>

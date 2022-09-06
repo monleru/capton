@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {dataState} from "../store/reducers/tonState";
 import {getTonData} from "../api/fetch";
 import './style.css'
@@ -17,7 +17,7 @@ const Header:React.FC = () => {
     const setCurrency = (lang:string) => {
         dispatch({type: "FETCH_CURRENCY", payload: lang})
         lang == "RUB" ? setCurrencyIcon('₽') : setCurrencyIcon('$')
-        getTonData(state.data.currency, dispatch)
+        getTonData(lang, dispatch)
     }
     useEffect(() =>{
         getTonData(state.data.currency, dispatch)
@@ -26,13 +26,15 @@ const Header:React.FC = () => {
         <>
             <div className="header">
                 <div className="header_1">
-                    <p className="logo_header"><img src={logo} alt=""/>Capton</p>
+                        <Link className="logo_header" to="/"><img src={logo} alt=""/>
+                            Capton
+                        </Link>
                     <ul>
                         <li>
-                            <NavLink to="/">Cryptocurrencies</NavLink>
+                            <NavLink to="/Cryptocurrencies">Cryptocurrencies</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/markets">Markets</NavLink>
+                            <NavLink to="/gram_talks">Gram Talks</NavLink>
                         </li>
                         <li>
                             <NavLink to="/events">Events</NavLink>

@@ -5,6 +5,8 @@
     width: 100%;
     background: rgba(22, 22, 22, 1);
     min-height: 116px;
+    z-index: 9999;
+    margin: 0 auto;
 }
 .header_1{
     max-width: 1920px;
@@ -14,6 +16,7 @@
     align-items: center;
     min-height: 80px;
     border-bottom: 1px solid rgba(255,255,255, 0.1);
+    margin: 0 auto;
 }
 .header_1 > ul > li {
     float: left;
@@ -30,6 +33,7 @@
     min-height: 36px;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 .header_2 >p {
     font-weight: 600;
@@ -55,6 +59,9 @@
 }
 .Footer > div > p {
     margin: 0;
+}
+.Footer > div > p > a:hover {
+    color: #0088CC;
 }
 .Footer > div > H3 {
     margin: 10px 0;
@@ -122,4 +129,7 @@ select{
 }
 .active{
     color: #0088CC;
+}
+.div_link_button{
+
 }
