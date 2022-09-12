@@ -1,14 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.css'
 import {useSelector} from "react-redux";
 import Filter from "./filter";
 import Collections from "./collections";
+import HotCollections from "./hotCollections";
+import NewCollections from "./newCollections";
 const ton_logo = require('../img/ton_logo.png')
 const new_collections = require('../img/new_collections.png')
 const hot_collections = require('../img/hot_collections.png')
 const CryptocurrenciesMain:React.FC = () => {
     const state:any = useSelector(state => state)
-    console.log(state)
+    const [date, setDate] = useState('day')
+    const ChangeDate = (value:string) =>{
+        setDate(value)
+    }
     return (
         <div>
             <div className="main_page_ton_info_grid">
@@ -21,33 +26,7 @@ const CryptocurrenciesMain:React.FC = () => {
                         New Collections
                     </p>
                     <div>
-                        <div className="collections_grid">
-                            <div className="collection_name_div">
-                                <p>1.</p>
-                                <img className="collection_name_logo" src="" alt=""/>
-                                <p>G-BOTS SD</p>
-                            </div>
-                            <p>10,000</p>
-                            <p style={{'color': '#FFFFFF'}}>$130.56</p>
-                        </div>
-                        <div className="collections_grid">
-                            <div className="collection_name_div">
-                                <p>2.</p>
-                                <img className="collection_name_logo" src="" alt=""/>
-                                <p>G-BOTS SD</p>
-                            </div>
-                            <p>10,000</p>
-                            <p style={{'color': '#FFFFFF'}}>$130.56</p>
-                        </div>
-                        <div className="collections_grid">
-                            <div className="collection_name_div">
-                                <p>3.</p>
-                                <img className="collection_name_logo" src="" alt=""/>
-                                <p>G-BOTS SD</p>
-                            </div>
-                            <p>10,000</p>
-                            <p style={{'color': '#FFFFFF'}}>$130.56</p>
-                        </div>
+                        <NewCollections />
                     </div>
                 </div>
                 <div className="hot_collections">
@@ -55,35 +34,7 @@ const CryptocurrenciesMain:React.FC = () => {
                         <img src={hot_collections} alt=""/>
                         Hot Collections
                     </p>
-                    <div>
-                        <div className="collections_grid">
-                            <div className="collection_name_div">
-                                <p>1.</p>
-                                <img className="collection_name_logo" src="" alt=""/>
-                                <p>G-BOTS SD</p>
-                            </div>
-                            <p>10,000</p>
-                            <p style={{'color': '#FFFFFF'}}>$130.56</p>
-                        </div>
-                        <div className="collections_grid">
-                            <div className="collection_name_div">
-                                <p>2.</p>
-                                <img className="collection_name_logo" src="" alt=""/>
-                                <p>G-BOTS SD</p>
-                            </div>
-                            <p>10,000</p>
-                            <p style={{'color': '#FFFFFF'}}>$130.56</p>
-                        </div>
-                        <div className="collections_grid">
-                            <div className="collection_name_div">
-                                <p>3.</p>
-                                <img className="collection_name_logo" src="" alt=""/>
-                                <p>G-BOTS SD</p>
-                            </div>
-                            <p>10,000</p>
-                            <p style={{'color': '#FFFFFF'}}>$130.56</p>
-                        </div>
-                    </div>
+                    <HotCollections />
                 </div>
                 <div className="ton_state_div">
                     <div>
@@ -145,8 +96,8 @@ const CryptocurrenciesMain:React.FC = () => {
                     </div>
                 </div>
             </div>
-            <Filter  />
-            <Collections />
+            <Filter ChangeDate={ChangeDate} />
+            <Collections date={date}/>
         </div>
     );
 };

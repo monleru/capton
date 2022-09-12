@@ -82,14 +82,6 @@ const Index:React.FC = () => {
                     <MeetupCards />
                 </div>
             </div>
-            <div className="our_apps_div">
-                <h3>Our Apps</h3>
-                <div className="Apps_flex">
-                    <img src={appstore} alt=""/>
-                    <img src={googleplay} alt=""/>
-                    <img style={{'width': '400px'}} src={crystall} alt=""/>
-                </div>
-            </div>
         </div>
     );
 };

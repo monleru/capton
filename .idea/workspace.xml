@@ -3,15 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="01e210ed-f88d-4ea9-afb9-8fa87a923cd3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/fetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/fetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/cards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/collections.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/eventsMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/eventsMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/collections.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/cryptocurrenciesMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/cryptocurrenciesMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/filter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/landingPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/landingPage/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/tonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tonState.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +30,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Dhuffg2jqJcLfi9Ula41Bx7JmJ" />
   <component name="ProjectLevelVcsManager">
@@ -36,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowCommit.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Александр/Desktop/deathpotions",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "C:\\capton\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowCommit.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/capton&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\capton\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\capton\src\admin" />
@@ -88,6 +92,16 @@
       <workItem from="1662157993689" duration="9688000" />
       <workItem from="1662207483082" duration="22994000" />
       <workItem from="1662293861854" duration="18416000" />
+      <workItem from="1662471940139" duration="959000" />
+      <workItem from="1662516419666" duration="3580000" />
+      <workItem from="1662568315413" duration="30000" />
+      <workItem from="1662574205620" duration="7485000" />
+      <workItem from="1662585912501" duration="1380000" />
+      <workItem from="1662670371834" duration="21000" />
+      <workItem from="1662754698264" duration="16428000" />
+      <workItem from="1662776197928" duration="1836000" />
+      <workItem from="1662928111016" duration="8167000" />
+      <workItem from="1662942463761" duration="2692000" />
     </task>
     <servers />
   </component>

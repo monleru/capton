@@ -1,15 +1,15 @@
 .events_header{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
 }
+
 .events_header > div > button {
     border: none;
     background: none;
     color: #FFFFFF;
 }
 .events_header > div {
-    width: 50%;
-    max-width: 400px;
+    min-width: 350px;
     font-size: 40px;
     font-weight: 700;
 }
@@ -22,6 +22,7 @@
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255, 0.1);
     padding-left: 30px;
+    width: 100%;
 }
 .collections_sort_div > * {
     text-align: center;
@@ -35,12 +36,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 250px;
 }
 .event_page_collections{
     background: rgba(22, 22, 22, 1);
     margin: 10px 0;
     border-radius: 26px;
     padding: 10px 0;
+    overflow-x: auto;
 }
 .pages_buttons{
     border: none;
@@ -124,4 +127,14 @@
 }
 .just_start{
     justify-content: start;
+}
+.loader_events_card{
+    width: 100% !important;
+    height: 100px;
+    max-height: 100px;
+}
+@media screen and (max-width: 1250px){
+    .collections_sort_div{
+        width: fit-content;
+    }
 }

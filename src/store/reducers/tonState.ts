@@ -16,7 +16,7 @@ interface dataAction {
     payload?: any
 }
 const initialState: dataState = {
-    collections: 240,
+    collections: 3624,
     tokens: 24,
     markets: 12,
     marketCap: 0,

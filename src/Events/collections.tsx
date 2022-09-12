@@ -13,8 +13,10 @@ interface cardInfo{
 
 const Collections:React.FC = () => {
     const [cards, setCards] = useState<cardInfo[]>([])
+    const [loader, setLoader] = useState(true)
     function changeCards(cards_:any){
         setCards(cards_)
+        setLoader(false)
     }
     useEffect(() => {
         getDrops(changeCards)
@@ -39,7 +41,7 @@ const Collections:React.FC = () => {
             </div>
             <div>
                 {cards.map(post =>
-                    <Cards key={post._id} props={post}/>
+                    <Cards key={post._id} props={post} loader={loader}/>
                 )}
             </div>
             <p className="collections_pages">

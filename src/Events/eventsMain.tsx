@@ -9,12 +9,7 @@ const EventsMain:React.FC = () => {
         <div>
             <div className="events_header">
                 <div>
-                    <p>Today's Activites on <span>The Open Network</span></p>
-                </div>
-                <div>
-                    <button>Events</button>
-                    <button>Drops</button>
-                    <button>Sales</button>
+                    <p>Today's Activites on <br/><span>The Open Network</span></p>
                 </div>
             </div>
             <Filter />

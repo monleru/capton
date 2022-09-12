@@ -3,7 +3,7 @@ interface filter{
     buttons: string[],
     current: string
 }
-const Filter:React.FC = () => {
+const Filter:React.FC<any> = ({ChangeDate}) => {
     const [filter, setFilter] = useState<filter>({
         buttons: ["All", "Art", "Collectibles", "Utility", "Metaverse"],
         current: "All"
@@ -13,6 +13,9 @@ const Filter:React.FC = () => {
             buttons: filter.buttons,
             current: filter_
                   })
+    }
+    const onChangeDate = (value:string) => {
+        ChangeDate(value)
     }
     return (
         <div className="main_page_filters">
@@ -29,10 +32,11 @@ const Filter:React.FC = () => {
                 )}
             </div>
             <div>
-                <select name="" id="">
-                    <option value="">24H</option>
-                    <option value="">7D</option>
-                    <option value="">30D</option>
+                <select onChange={(e) => onChangeDate(e.target.value)} name="" id="">
+                    <option value="day">24H</option>
+                    <option value="week">7D</option>
+                    <option value="month">30D</option>
+                    <option value="all">All</option>
                 </select>
                 <button className="filter_button_active">Filters</button>
             </div>

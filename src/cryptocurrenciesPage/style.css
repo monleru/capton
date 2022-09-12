@@ -126,6 +126,8 @@
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
     margin-bottom: 50px;
     margin-top: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 .main_page_collections_div > div {
     display: flex;
@@ -134,11 +136,13 @@
     font-size: 16px;
     font-weight: 700;
     border-top: 1px rgba(255, 255, 255, 0.1) solid;
+    width: 100%;
 }
 .main_page_collections_div > div > p {
     display: flex;
     align-items: center;
     width: 10%;
+    min-width: 150px;
 }
 .main_page_pages_div{
     border: none !important;
@@ -146,6 +150,7 @@
     justify-content: center !important;
     grid-gap: 5px;
     position: relative;
+    width: 100% !important;
 }
 .main_page_pages_div > button {
     border: none;
@@ -208,4 +213,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width: 1250px){
+    .main_page_collections_div > div{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main_page_ton_info_grid{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+    }
+    .ton_state_div{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .hot_collections{
+        grid-row: 3/4;
+    }
+    .main_page_filters{
+        flex-wrap: wrap;
+        grid-gap: 10px;
+    }
+    .main_page_collections_div{
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main_page_ton_info_grid{
+        grid-template-rows: auto auto auto auto ;
+        grid-template-columns: auto;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .ton_state_div{
+        grid-column: 1/1;
+        grid-row: 2/4;
+        width: 100%;
+    }
+    .hot_collections{
+        grid-row: 4/5;
+        width: 100%;
+    }
+    .new_collections{
+        grid-row: 5/6;
+        margin-bottom: 50px;
+        width: 100%;
+    }
 }
