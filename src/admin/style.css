@@ -1,0 +1,33 @@
+.login_div{
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #1d1d21;
+}
+.login_div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 50px;
+}
+.login_div > form > input {
+    background: #01324B;
+    padding: 5px 20px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.login_div > form > button {
+    background: #01324B;
+    padding: 5px 20px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+}

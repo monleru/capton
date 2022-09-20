@@ -38,12 +38,19 @@
     justify-content: center;
     min-width: 250px;
 }
-.event_page_collections{
+.event_page_collections {
     background: rgba(22, 22, 22, 1);
     margin: 10px 0;
     border-radius: 26px;
     padding: 10px 0;
     overflow-x: auto;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.event_page_collections::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0;
 }
 .pages_buttons{
     border: none;

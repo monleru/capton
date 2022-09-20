@@ -1,6 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
-import ContentLoader, {Facebook}  from "react-content-loader";
+import ContentLoader from 'react-content-loader'
+
+const MyLoader = () => (
+    <ContentLoader viewBox="0 0 100000 100000"
+                   preserveAspectRatio="none"
+                   width='100%'
+                   height='50px'
+                   backgroundColor="#3a3a3a"
+                   foregroundColor="#555151"
+                   speed={4}>
+        <rect x="80" y="40" rx="3" ry="3" width="100%" height="100%" />
+    </ContentLoader>
+)
 
 interface cardInfo{
     props: {
@@ -14,27 +26,12 @@ interface cardInfo{
     },
     loader: boolean
 }
-const MyLoader = () => (
-    <ContentLoader
-        speed={4}
-        width={"100% "}
-        height={"100%"}
-        backgroundColor="rgba(75, 75, 75, 1)"
-        foregroundColor="rgba(89, 84, 84, 1)">
-        {/* Only SVG shapes */}
-        <rect x="" y="0" rx="0" ry="4" width="100%" height="100%" />
-    </ContentLoader>
-)
 const Cards:React.FC<cardInfo> = (
     {props, loader}) => {
-    if (loader == true ) {
+    if (typeof props === "number" ) {
         return(
             <div>
-                <div className="collections_sort_div">
-                    <div className="loader_events_card">
-                        <MyLoader />
-                    </div>
-                </div>
+                <MyLoader />
             </div>
         )
     }

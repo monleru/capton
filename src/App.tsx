@@ -7,6 +7,7 @@ import EventsMain from "./Events/eventsMain";
 import EventPage from "./Events/eventPage/eventPage";
 import CryptocurrenciesMain from "./cryptocurrenciesPage/cryptocurrenciesMain";
 import Index from "./landingPage";
+import Admin from "./admin/admin";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="Gram_talks" element={<div>Gram Talks</div>}></Route>
                 <Route path="events" element={<EventsMain />}></Route>
                 <Route path="events/:name/:id" element={<EventPage />}></Route>
+                <Route path='/admin' element={<Admin />}></Route>
             </Route>
 
         </Routes>

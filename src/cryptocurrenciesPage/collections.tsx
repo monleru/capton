@@ -1,6 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import Pages from "./pages";
-
+import ContentLoader from "react-content-loader";
+import CollectionHeader from "./components/collectionHeader";
+const MyLoader = () => (
+    <ContentLoader viewBox="0 0 100000 100000"
+                   preserveAspectRatio="none"
+                   width='100%'
+                   height='50px'
+                   backgroundColor="#3a3a3a"
+                   foregroundColor="#555151"
+                   speed={4}>
+        <rect x="80" y="40" rx="3" ry="3" width="100%" height="100%" />
+    </ContentLoader>
+)
 
 const Collections:React.FC<any> = ({date}) => {
     console.log(date)
@@ -11,18 +23,23 @@ const Collections:React.FC<any> = ({date}) => {
            .then(data => setCollection(data.data.mainPageTopCollection.items))
     },[date])
     console.log(collections)
+    if (collections.length == 0 ) {
+        let num = [1,2,3,4,5,6,7,8,9,0]
+        return (
+            <div className="main_page_collections_div">
+                <CollectionHeader />
+                {num.map(post =>
+                    <div style={{width: '100%', height: '50px'}}>
+                        <MyLoader />
+                    </div>
+                )}
+                <Pages />
+            </div>
+        )
+    }
     return (
         <div className="main_page_collections_div">
-            <div style={{'borderTop': 'none'}}>
-                <p style={{marginLeft: '5px', minWidth: '30px'}}>#</p>
-                <p style={{minWidth: '200px', 'justifyContent': 'start'}}>Name</p>
-                <p>Floor Price <span className="help">?</span></p>
-                <p>Floor Change</p>
-                <p>Sales</p>
-                <p>Top Sale <span className="help">?</span></p>
-                <p>Volume <span className="help">?</span></p>
-                <p>Market Cap <span className="help">?</span></p>
-            </div>
+            <CollectionHeader />
             {collections.map(post =>
                 <div>
                     <p style={{marginLeft: '5px', minWidth: '30px'}}>{post.place}</p>

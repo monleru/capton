@@ -12,7 +12,7 @@ interface cardInfo{
 }
 
 const Collections:React.FC = () => {
-    const [cards, setCards] = useState<cardInfo[]>([])
+    const [cards, setCards] = useState<any[]>([1,2,3,4,5,6,7,8,9,0])
     const [loader, setLoader] = useState(true)
     function changeCards(cards_:any){
         setCards(cards_)

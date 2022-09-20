@@ -98,9 +98,7 @@ const EventPage:React.FC = () => {
                                 <a href={data?.links.website}><img src={website} alt=""/></a>
                             </p>
                         </div>
-                        <div>
-                            <a className="event_page_info_event_link" href={data?.eventLink}>Event Page</a>
-                        </div>
+                        <a className="event_page_info_event_link" href={data?.eventLink}>Event Page</a>
                     </div>
                 </div>
                 <div className="div_event_2">
@@ -130,8 +128,8 @@ const EventPage:React.FC = () => {
                         </div>
                     </div>
                     <div className="event_page_main_div">
-                        <div dangerouslySetInnerHTML={{__html: data?.aboutDiv}} className="event_page_main_about"></div>
                         <img className="event_page_img" src={img}/>
+                        <div dangerouslySetInnerHTML={{__html: data?.aboutDiv}} className="event_page_main_about"></div>
                         <div dangerouslySetInnerHTML={{__html: data?.details}} className="event_page_main_details"></div>
                     </div>
                 </div>
