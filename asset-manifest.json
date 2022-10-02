@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce149bce.css",
+    "main.js": "/static/js/main.6579955d.js",
+    "static/media/crystall.png": "/static/media/crystall.551f9f3db5450af56468.png",
+    "static/media/ton_meetup_1.jpg": "/static/media/ton_meetup_1.31401ee977957e37e78c.jpg",
+    "static/media/background_header_.png": "/static/media/background_header_.68b72fbc98f170b175cc.png",
+    "static/media/loader.gif": "/static/media/loader.d944122cbaa2f441e1b7.gif",
+    "static/media/div_3.png": "/static/media/div_3.fbf36c446f9789f3dca9.png",
+    "static/media/div_1.png": "/static/media/div_1.f24458b8f54a3b5b014e.png",
+    "static/media/background_info.png": "/static/media/background_info.bf6d06d3736bc6e92ff6.png",
+    "index.html": "/index.html",
+    "main.ce149bce.css.map": "/static/css/main.ce149bce.css.map",
+    "main.6579955d.js.map": "/static/js/main.6579955d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce149bce.css",
+    "static/js/main.6579955d.js"
+  ]
+}
