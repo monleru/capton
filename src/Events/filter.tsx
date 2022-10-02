@@ -20,6 +20,7 @@ const Filter = () => {
             <span>|</span>
             {filter.buttons.map(post =>
                 <button
+                    key={post}
                     onClick={() => onChangeFilter(post)}
                     className={"filter_button" + (post === filter.current ? ' filter_button_active' : '')}>
                     {post}

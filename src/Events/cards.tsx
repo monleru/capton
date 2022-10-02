@@ -43,9 +43,11 @@ const Cards:React.FC<cardInfo> = (
                     {props.name}
                 </Link>
                 <p style={{'color': 'rgba(0, 136, 204, 1)'}}>{props.reward}</p>
-                <p className="activites_type_flex">{props.activites.map(post =>
-                    <p className="activites_type">{post}</p>
-                )}</p>
+                <p className="activites_type_flex">
+                    {props.activites.map(post =>
+                        <p key={post} className="activites_type">{post}</p>
+                    )}
+                </p>
                 <p style={ props.rating >= 7.5 ? {'backgroundImage': 'linear-gradient(to bottom, rgba(25, 149, 218, 1), rgba(222, 168, 255, 1))'} :
                            props.rating >= 4 ? {'backgroundImage': 'linear-gradient(to bottom, rgba(52, 218, 25, 1), rgba(92, 255, 216, 1))'} :
                            props.rating <4 ? {'backgroundImage': 'linear-gradient(to bottom, rgba(218, 25, 25, 1), rgba(255, 239, 92, 1))'} : { 'backgroundImage': ''}}

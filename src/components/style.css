@@ -65,15 +65,35 @@
     position: absolute;
     width: 100%;
     left: 0;
+    max-width: 1400px;
+}
+.footer_main{
+    width: 100%;
+    background: rgba(22, 22, 22, 1);
+    height: fit-content;
+    position: absolute;
 }
 .Footer > div{
     min-width: 200px;
 }
 .Footer > div > p {
+    font-weight: 600;
     margin: 0;
+}
+.Footer > div > p > a{
+    font-weight: 600;
+    transition: 500ms;
 }
 .Footer > div > p > a:hover {
     color: #0088CC;
+}
+.Footer > div > p > a > img {
+    transition: 500ms;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+.Footer > div > p > a > img:hover{
+    transform: scale(1.3);
 }
 .Footer > div > H3 {
     margin: 10px 0;
@@ -81,7 +101,7 @@
 .All_right_reserved{
     width: 100%;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     color: rgba(139, 139, 139, 1);
 }
 .subscribe_button{
@@ -94,6 +114,14 @@
     font-size: 16px;
     font-weight: 600;
     color: rgba(0, 136, 204, 1);
+
+    
+    transition: 500ms;
+}
+.subscribe_button:hover{
+    background: white;
+    color: #01324B;
+    transform: scale(1.1);
 }
 .logo_header{
     display: flex;

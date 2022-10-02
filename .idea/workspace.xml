@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01e210ed-f88d-4ea9-afb9-8fa87a923cd3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/cards.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/collections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/eventPage/eventPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/eventPage/eventPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/eventPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/eventPage/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/headerComponents/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/headerComponents/search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/collections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/hotCollections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/hotCollections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/newCollections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/newCollections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cryptocurrenciesPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/cryptocurrenciesPage/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/landingPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/landingPage/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +93,7 @@
       <workItem from="1663453993343" duration="2386000" />
       <workItem from="1663640301733" duration="4144000" />
       <workItem from="1663668067583" duration="5508000" />
-      <workItem from="1663682426153" duration="6565000" />
+      <workItem from="1663682426153" duration="8815000" />
     </task>
     <servers />
   </component>

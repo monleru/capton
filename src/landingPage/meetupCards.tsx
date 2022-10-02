@@ -33,6 +33,7 @@ const MeetupCards:React.FC = () => {
                 >
                     {cards.map(post =>
                         <div className="meetup_card_div">
+                            key={Math.random()} 
                             <img className="meetup_card_img" src={meetup_1} alt=""/>
                             <h3>Ton Meetup #23</h3>
                             <p>The title of the post here will be, at most, 2 lines</p>

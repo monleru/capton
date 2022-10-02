@@ -29,7 +29,7 @@ const Collections:React.FC<any> = ({date}) => {
             <div className="main_page_collections_div">
                 <CollectionHeader />
                 {num.map(post =>
-                    <div style={{width: '100%', height: '50px'}}>
+                    <div key={Math.random()} style={{width: '100%', height: '50px'}}>
                         <MyLoader />
                     </div>
                 )}
@@ -41,7 +41,7 @@ const Collections:React.FC<any> = ({date}) => {
         <div className="main_page_collections_div">
             <CollectionHeader />
             {collections.map(post =>
-                <div>
+                <div key={Math.random()} >
                     <p style={{marginLeft: '5px', minWidth: '30px'}}>{post.place}</p>
                     <p style={{minWidth: '200px', 'justifyContent': 'start'}}>
                         <img className="main_page_collection_img" src={post.collection.image.image.sized} alt=""/>

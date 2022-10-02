@@ -18,7 +18,6 @@ const Search = () => {
                 }
                 setCollectionsLoader(false)})
     }, 500)
-    console.log(collections)
     function useDebounce(callback:any, delay:any) {
         const timer = useRef<any>(null);
 

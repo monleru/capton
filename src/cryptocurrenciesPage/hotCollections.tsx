@@ -32,7 +32,7 @@ const HotCollections:React.FC = () => {
     return (
         <div>
             {hotCollections.map(post=>
-                <div className="collections_grid">
+                <div key={Math.random()} className="collections_grid">
                     <div className="collection_name_div">
                         <p>{post.place}.</p>
                         <img className="collection_name_logo" src={post.collection.image.image.sized} alt=""/>

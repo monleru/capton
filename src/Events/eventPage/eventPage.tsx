@@ -85,9 +85,10 @@ const EventPage:React.FC = () => {
                         </div>
                         <div>
                             <p>Activity Type</p>
-                            <p style={{'display': 'flex', 'gridGap': '30px', 'flexWrap': 'wrap', 'margin': 0}}>{data?.activites.map(post =>
-                                <p className="activites_type">{post}</p>
-                            )}</p>
+                            <p style={{'display': 'flex', 'gridGap': '30px', 'flexWrap': 'wrap', 'margin': 0}}>
+                                {data?.activites.map(post =>
+                                    <p key={post} className="activites_type">{post}</p>
+                                )}</p>
                         </div>
                         <div>
                             <p>Links</p>

@@ -25,7 +25,8 @@ const Filter:React.FC<any> = ({ChangeDate}) => {
                 </select>
                 <span>|</span>
                 {filter.buttons.map(post =>
-                    <button
+                    <button key={Math.random()} 
+                        disabled={true}
                         className={post == filter.current ? "filter_button_active" : ''}
                         onClick={() => onChangeFilter(post)}
                     >{post}</button>

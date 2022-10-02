@@ -47,6 +47,7 @@ const Collections:React.FC = () => {
             <p className="collections_pages">
                 {page.pages.map(post=>
                     <button
+                        key={'Col' + Math.random()}
                         onClick={(e) => (onchangePage(post))}
                         className={"pages_buttons" + (post == page.current ? " pages_button_active" : '')}>
                         {post}
