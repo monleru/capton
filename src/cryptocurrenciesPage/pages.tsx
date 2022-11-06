@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 
-const Pages:React.FC = () => {
+const Pages:React.FC<any> = ({page_}) => {
+    console.log('page ' + page_)
+    let p = Array.from({ length: page_ }, (v, i) =>  i + 1)
     const [pages, setPages] = useState({
-        pages: [1,2,3,4,5,6,7],
+        pages: p,
         current: 1})
     const onChangePages = (post:any) => {
         setPages({
@@ -10,6 +12,7 @@ const Pages:React.FC = () => {
             current: post
         })
     }
+    console.log(pages)
     const plusPage = () =>{
         if (pages.current >= pages.pages.length) { return }
         setPages({
@@ -33,6 +36,7 @@ const Pages:React.FC = () => {
             </div>
             {pages.pages.map( post=>
                 <button
+                    key={Math.random()} 
                     onClick={() => onChangePages(post)}
                     className={"page_num " + (post == pages.current ? "page_num_active" : '')}>{post}
                 </button>

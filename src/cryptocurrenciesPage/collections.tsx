@@ -18,7 +18,7 @@ const Collections:React.FC<any> = ({date}) => {
     console.log(date)
     const [collections, setCollection] = useState<any[]>([])
     useEffect(() => {
-       fetch(`https://captons.herokuapp.com/api/collections?num=10&date=${date}`)
+       fetch(`https://captons.herokuapp.com/api/collections?num=100&date=${date}`)
            .then(data => data.json())
            .then(data => setCollection(data.data.mainPageTopCollection.items))
     },[date])
@@ -59,7 +59,7 @@ const Collections:React.FC<any> = ({date}) => {
                     <p>{(post.collection.approximateItemsCount * post.floorPrice).toFixed(0)}</p>
                 </div>
             )}
-            <Pages />
+            <Pages page_={collections.length}/>
         </div>
     );
 };

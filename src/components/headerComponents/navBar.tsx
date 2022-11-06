@@ -5,11 +5,11 @@ const NavBar = () => {
     return (
         <ul>
             <li>
-                <NavLink to="/Cryptocurrencies">Cryptocurrencies</NavLink>
+                <NavLink to="/">Cryptocurrencies</NavLink>
             </li>
-            <li>
-                <NavLink to="/gram_talks">Gram Talks</NavLink>
-            </li>
+            {/* <li>
+                <NavLink  to="/gram_talks">Gram Talks</NavLink>
+            </li> */}
             <li>
                 <NavLink to="/events">Events</NavLink>
             </li>

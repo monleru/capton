@@ -8,6 +8,8 @@ import NewCollections from "./newCollections";
 const ton_logo = require('../img/ton_logo.png')
 const new_collections = require('../img/new_collections.png')
 const hot_collections = require('../img/hot_collections.png')
+
+
 const CryptocurrenciesMain:React.FC = () => {
     const state:any = useSelector(state => state)
     const [date, setDate] = useState('day')

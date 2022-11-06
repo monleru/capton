@@ -15,7 +15,7 @@ function App() {
       <Header />
         <Routes >
             <Route path="/" element={<Layout/>}>
-                <Route index element={<Index />}></Route>
+                <Route index element={<CryptocurrenciesMain />}></Route>
                 <Route path="Cryptocurrencies" element={<CryptocurrenciesMain />}></Route>
                 <Route path="Gram_talks" element={<div>Gram Talks</div>}></Route>
                 <Route path="events" element={<EventsMain />}></Route>
