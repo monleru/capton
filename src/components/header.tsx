@@ -102,7 +102,10 @@ const Header:React.FC = () => {
                                 <option value="Русский">Русский</option>
                             </select>
                             <button className="dark_button"><img src={dark} alt=""/></button>
-                            <button onClick={() => toggleMenu(false)}>close</button>
+                            <button className='close_menu_mob' onClick={() => toggleMenu(false)}>
+                                <p className='close_menu_mob_l'></p>
+                                <p className='close_menu_mob_r'></p>
+                            </button>
                         </div>
                     </div>
                     <SearchMobile  setSearchbutton={onChangeSearch} searchbutton={Searchbutton}/>

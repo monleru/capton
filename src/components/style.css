@@ -1,3 +1,8 @@
+.outlet{
+    padding: 0 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .header{
     position: fixed;
     left: 0;
@@ -62,16 +67,14 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    position: absolute;
     width: 100%;
-    left: 0;
     max-width: 1400px;
+    margin: 0 auto;
 }
 .footer_main{
     width: 100%;
-    background: rgba(22, 22, 22, 1);
+    background: rgba(22, 22, 22, 1) !important;
     height: fit-content;
-    position: absolute;
 }
 .Footer > div{
     min-width: 200px;
@@ -254,6 +257,26 @@ select{
     display: none;
 }
 @media screen and (max-width: 1024px) {
+    .search_collections_div{
+        width: 70%;
+        background: #01324B;
+        max-height: 70%;
+        position: fixed;
+        top: 60px;
+        z-index: 9999;
+        opacity: 0;
+        border-radius: 10px;
+        display: flex;
+        grid-gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    
+        animation: colections_div_opacity 500ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
+    
     .serch_svg{
         display: flex !important;
     }
@@ -290,10 +313,39 @@ select{
         content: '';
         top: 8px;
     }
+    .close_menu_mob{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: none;
+        border: none;
+    }
+    .close_menu_mob_l{
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 20px;
+        height: 2px;
+        background: #FFF;
+        rotate: 45deg;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .close_menu_mob_r{
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 20px;
+        height: 2px;
+        background: #FFF;
+        rotate: 135deg;
+        border-radius: 5px;
+        margin: 0;
+    }
     .menu_mobile{
         width: 80%;
         height: 100vh;
-        background: rgba(1,1,1, 0.5);
+        background: rgba(1,1,1, 1);
         position: fixed;
         right: -100%;
         top: 0;
@@ -302,7 +354,7 @@ select{
         text-align: center;
         z-index: 998;
 
-        transition: 2s;
+        transition: 1s;
     }
     .menu_mobile_active{
         right: 0;
@@ -318,6 +370,8 @@ select{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 50px;
+        grid-gap: 20px;
     }
     .menu_mobile > ul > li {
         text-decoration: none;
@@ -361,5 +415,17 @@ select{
     @keyframes search_mob  {
         0% { top: -100%}
         100% { top: 0}
+    }
+}
+@media screen and (max-width:768px) {
+    .Footer > div{
+        min-width: 150px;
+    }
+    .Footer{
+        font-size: 14px;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 10px;
     }
 }

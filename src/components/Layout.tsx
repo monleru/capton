@@ -5,11 +5,11 @@ import {Outlet} from "react-router-dom";
 
 const Layout:React.FC = () => {
     return (
-        <div>
+        <>
             <Header />
-            <Outlet />
+            <div className='outlet'><Outlet /></div>
             <Footer />
-        </div>
+        </>
     );
 };
 
