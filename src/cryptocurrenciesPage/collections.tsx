@@ -17,6 +17,10 @@ const MyLoader = () => (
 const Collections:React.FC<any> = ({date}) => {
     console.log(date)
     const [collections, setCollection] = useState<any[]>([])
+    const [pag_,setPag_] = useState(1)
+    const setPage_ = (num:number) => {
+        setPag_(num)
+    }
     useEffect(() => {
        fetch(`https://captons.herokuapp.com/api/collections?num=100&date=${date}`)
            .then(data => data.json())
@@ -37,10 +41,11 @@ const Collections:React.FC<any> = ({date}) => {
             </div>
         )
     }
+    console.log(collections)
     return (
         <div className="main_page_collections_div">
             <CollectionHeader />
-            {collections.map(post =>
+            {collections.slice(pag_ > 1 ? 10*(pag_ -1) : pag_, 10*pag_).map(post =>
                 <div key={Math.random()} >
                     <p style={{marginLeft: '5px', minWidth: '30px'}}>{post.place}</p>
                     <p style={{minWidth: '200px', 'justifyContent': 'start'}}>
@@ -59,7 +64,7 @@ const Collections:React.FC<any> = ({date}) => {
                     <p>{(post.collection.approximateItemsCount * post.floorPrice).toFixed(0)}</p>
                 </div>
             )}
-            <Pages page_={collections.length}/>
+            <Pages setPage_={setPage_} page_={collections.length}/>
         </div>
     );
 };
