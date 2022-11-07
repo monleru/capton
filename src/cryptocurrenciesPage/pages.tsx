@@ -1,7 +1,6 @@
 import React, {useState,useEffect} from 'react';
 
 const Pages:React.FC<any> = ({page_,setPage_}) => {
-    console.log('page ' + page_)
     let p = Array.from({ length: Math.ceil(page_/10) }, (v, i) =>  i + 1)
     const [pages, setPages] = useState({
         pages: p,

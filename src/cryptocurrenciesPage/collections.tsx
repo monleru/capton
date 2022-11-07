@@ -15,7 +15,6 @@ const MyLoader = () => (
 )
 
 const Collections:React.FC<any> = ({date}) => {
-    console.log(date)
     const [collections, setCollection] = useState<any[]>([])
     const [pag_,setPag_] = useState(1)
     const setPage_ = (num:number) => {
@@ -26,7 +25,6 @@ const Collections:React.FC<any> = ({date}) => {
            .then(data => data.json())
            .then(data => setCollection(data.data.mainPageTopCollection.items))
     },[date])
-    console.log(collections)
     if (collections.length == 0 ) {
         let num = [1,2,3,4,5,6,7,8,9,0]
         return (
@@ -41,11 +39,10 @@ const Collections:React.FC<any> = ({date}) => {
             </div>
         )
     }
-    console.log(collections)
     return (
         <div className="main_page_collections_div">
             <CollectionHeader />
-            {collections.slice(pag_ > 1 ? 10*(pag_ -1) : pag_, 10*pag_).map(post =>
+            {collections.slice(pag_ > 1 ? 10*(pag_ -1) : pag_ - 1, 10*pag_).map(post =>
                 <div key={Math.random()} >
                     <p style={{marginLeft: '5px', minWidth: '30px'}}>{post.place}</p>
                     <p style={{minWidth: '200px', 'justifyContent': 'start'}}>

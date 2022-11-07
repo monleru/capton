@@ -62,7 +62,17 @@ const Header:React.FC = () => {
                             <span></span>
                         </label>
                     </div>
-                    <div
+                </div>
+                <div className="header_2">
+                    <p>Collections: <span>&nbsp; {state.tonState.collections}</span></p>
+                    <p>Tokens: <span>&nbsp; {state.tonState.tokens}</span></p>
+                    <p>Markets: <span>&nbsp; {state.tonState.markets}</span></p>
+                    <p>Market Cap: <span>&nbsp; {currencyIcon}{state.tonState.marketCap}</span></p>
+                    <p>24h vol: <span>&nbsp; {currencyIcon}{state.tonState.vol24}</span></p>
+                    <p>Rewards: <span>&nbsp; {state.tonState.rewards}</span></p>
+                </div>
+            </div>
+            <div
                         className={"menu_mobile" + (isMenuOpen ? " menu_mobile_active" : '')}
                     >
                         <NavBar />
@@ -79,19 +89,9 @@ const Header:React.FC = () => {
                                 <option value="Русский">Русский</option>
                             </select>
                             <button className="dark_button"><img src={dark} alt=""/></button>
-                            <input type="text" placeholder="Search"/>
+                            <button onClick={() => toggleMenu(false)}>close</button>
                         </div>
                     </div>
-                </div>
-                <div className="header_2">
-                    <p>Collections: <span>&nbsp; {state.tonState.collections}</span></p>
-                    <p>Tokens: <span>&nbsp; {state.tonState.tokens}</span></p>
-                    <p>Markets: <span>&nbsp; {state.tonState.markets}</span></p>
-                    <p>Market Cap: <span>&nbsp; {currencyIcon}{state.tonState.marketCap}</span></p>
-                    <p>24h vol: <span>&nbsp; {currencyIcon}{state.tonState.vol24}</span></p>
-                    <p>Rewards: <span>&nbsp; {state.tonState.rewards}</span></p>
-                </div>
-            </div>
         </div>
     );
 };
