@@ -15,6 +15,10 @@ const dark = require( '../img/dark_mode.png')
 
 
 const Header:React.FC = () => {
+    const [Searchbutton ,setSearchbutton] = useState(false)
+    const onChangeSearch = (bool:boolean) => {
+        setSearchbutton(bool)
+    }
     const state:any = useSelector(state => state)
     const dispatch = useDispatch()
     const [isMenuOpen, toggleMenu] = useState(false);
@@ -55,7 +59,16 @@ const Header:React.FC = () => {
                         <Search />
                     </div>
                     <div className="serch_svg" style={{display: 'flex'}}>
-                        <SearchMobile />
+                    <button
+                            className="search_svg_button"
+                            onClick={() => {
+                                setSearchbutton(true)
+                            }}
+                        ><svg style={{ width: '24px', height: '24px'}} fill="none">
+                            <svg></svg>
+                            <path d="M16.4153 16.4153L20 20M18.5455 11.2727C18.5455 15.2893 15.2894 18.5454 11.2728 18.5454C7.25612 18.5454 4 15.2893 4 11.2727C4 7.2561 7.25612 4 11.2728 4C15.2894 4 18.5455 7.2561 18.5455 11.2727Z" stroke="currentColor" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                        </svg>
+                    </button>
                         <input style={{opacity: 0, position: 'absolute'}}
                                onChange={(e) => {toggleMenu(e.target.checked)}} id="menu__toggle" type="checkbox" />
                         <label htmlFor="menu__toggle" className="burger_button">
@@ -92,6 +105,7 @@ const Header:React.FC = () => {
                             <button onClick={() => toggleMenu(false)}>close</button>
                         </div>
                     </div>
+                    <SearchMobile  setSearchbutton={onChangeSearch} searchbutton={Searchbutton}/>
         </div>
     );
 };
