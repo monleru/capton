@@ -46,7 +46,7 @@ const Collections:React.FC<any> = ({date}) => {
             {collections.slice(pag_ > 1 ? 10*(pag_ -1) : pag_ - 1, 10*pag_).map(post =>
                 <div key={Math.random()} >
                     <p style={{marginLeft: '5px', minWidth: '30px'}}>{post.place}</p>
-                    <p style={{minWidth: '200px', 'justifyContent': 'start'}}>
+                    <p title={post.collection.name} style={{minWidth: '200px', 'justifyContent': 'start'}}>
                         <img className="main_page_collection_img" src={post.collection.image.image.sized} alt=""/>
                         {post.collection.name.substr(0,10) + (post.collection.name.length > 10 ? '...' : '')}
                     </p>
