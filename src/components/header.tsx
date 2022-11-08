@@ -42,7 +42,7 @@ const Header:React.FC = () => {
                         <Link className="logo_header" to="/"><img src={logo} alt=""/>
                             Capton
                         </Link>
-                    <NavBar />
+                    <NavBar toggleMenu={toggleMenu} />
                     <div className="header_options">
                         <div style={{'display': 'flex'}}>
                             <span className="currency_icon">{currencyIcon}</span>

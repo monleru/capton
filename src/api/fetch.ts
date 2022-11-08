@@ -1,7 +1,7 @@
 import {api} from "./api";
 import {useSelector} from "react-redux";
 
-export const getDrops = (changeCards:any) =>{
+export const getDrops = async (changeCards:any) =>{
     fetch(`${api}/posts`).then(data => data.json()).then(data => changeCards(data))
 }
 export const getDrop = (id:string | undefined, changeCards:any) => {

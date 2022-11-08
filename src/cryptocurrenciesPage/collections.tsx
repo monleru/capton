@@ -20,6 +20,7 @@ const Collections:React.FC<any> = ({date}) => {
     const setPage_ = (num:number) => {
         setPag_(num)
     }
+    console.log(collections)
     useEffect(() => {
        fetch(`https://captons.herokuapp.com/api/collections?num=100&date=${date}`)
            .then(data => data.json())

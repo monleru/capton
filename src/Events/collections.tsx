@@ -22,7 +22,7 @@ const Collections:React.FC = () => {
         getDrops(changeCards)
     },[])
     const [page, setPage] = useState ({
-        pages: [1,2,3,4,5,6,7],
+        pages: [1],
         current: 1})
     function onchangePage(num:number) {
         let page_ = {
